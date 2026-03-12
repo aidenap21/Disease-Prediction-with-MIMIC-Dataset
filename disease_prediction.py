@@ -191,7 +191,7 @@ class DiseasePredictor:
         print('Accuracy:', accuracy_score(y_test, predictions))
 
         print('Classification Report:')
-        print(classification_report(y_test, predictions))
+        print(classification_report(y_test, predictions, target_names=self.encoder.classes_))
 
         # Print feature importance to show which features impact the model's predictions the most
         importance = pd.Series(
