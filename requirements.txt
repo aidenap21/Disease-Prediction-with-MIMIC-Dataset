@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+tqdm
+pathlib
+fastparquet
+joblib
